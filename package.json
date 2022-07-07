@@ -1,0 +1,33 @@
+{
+  "name": "get-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "getCli": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "lint": "eslint . --ext .ts,.js --fix"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.3.0",
+    "figlet": "^1.5.2",
+    "handlebars": "^4.7.7",
+    "inquirer": "8.0.0",
+    "isomorphic-git": "^1.18.3",
+    "open": "^8.4.0",
+    "ora": "5.4.1",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.4",
+    "@types/inquirer": "^8.2.1",
+    "@types/node": "^18.0.1",
+    "eslint": "^8.18.0"
+  }
+}
