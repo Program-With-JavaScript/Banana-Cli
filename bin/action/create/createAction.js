@@ -2,7 +2,7 @@ const { prompt } = require("inquirer");
 const chalk = require("chalk");
 const clear = require("clear");
 const question = require("./question");
-const { download, installDev } = require("./download");
+const { download } = require("./download");
 
 module.exports = async () => {
   clear();
@@ -18,7 +18,15 @@ module.exports = async () => {
 
   const downloadResult = await download("https://github.com/liiiiiiiiiiiir/basic-vite-vue-ts-template.git", name);
   if (downloadResult === "success") {
-    installDev(name);
+    console.log(`
+    ======启动方式======
+    
+    cd ${name}
+
+    yarn or npm install
+
+    yarn dev or npm run dev
+    `);
   } else {
     console.log(chalk.red("下载出错了"));
   }

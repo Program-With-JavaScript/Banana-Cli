@@ -1,9 +1,13 @@
 {
   "name": "get-cli",
+  "author": {
+    "name": "MaMeMo"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "type": "commonjs",
+  "packageManager": "yarn@1.22.15",
   "bin": {
     "getCli": "./bin/cli.js"
   },
@@ -16,6 +20,7 @@
     "clear": "^0.1.0",
     "commander": "^9.3.0",
     "figlet": "^1.5.2",
+    "fs-extra": "^10.1.0",
     "handlebars": "^4.7.7",
     "inquirer": "8.0.0",
     "isomorphic-git": "^1.18.3",
@@ -26,6 +31,7 @@
   "devDependencies": {
     "@types/clear": "^0.1.2",
     "@types/figlet": "^1.5.4",
+    "@types/fs-extra": "^9.0.13",
     "@types/inquirer": "^8.2.1",
     "@types/node": "^18.0.1",
     "eslint": "^8.18.0"
